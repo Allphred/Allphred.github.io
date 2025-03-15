@@ -1,0 +1,169 @@
+.carousel-item img {
+    height: 600px; 
+    object-fit: cover;
+}
+.card-img-top{
+    width: 100%;
+    height: 170px; 
+    object-fit: cover;
+}
+
+
+.bd-placeholder-img {
+    width: 100%;
+    height: 170px; 
+    object-fit: cover;
+}
+
+#btnVolverArriba {
+    position: fixed;  
+    bottom: 20px;    
+    right: 20px;     
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none; 
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    display: none; /* Oculto por defecto */
+    transition: opacity 0.3s;
+}
+
+#btnVolverArriba:hover {
+    background-color: #0056b3;
+}
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial; 
+    color: white !important; 
+}
+
+.img-category {
+    transition: transform 0.3s ease; /* Efecto hover */
+}
+.img-category:hover {
+    transform: scale(1.05);
+}
+
+.pt-navbar {
+    padding-top: 56px;
+}
+
+div.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+}
+
+.custom-iframe {
+    width: 100%;
+    height: 300px; /* Altura por defecto para móviles */
+}
+
+@media (min-width: 768px) {
+    .custom-iframe {
+        height: 500px; /* Altura más grande en pantallas medianas y grandes */
+    }
+}
+
+.normal-content p{
+    text-align: justify;
+}
+
+.carousel-caption p{
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  .block {
+    padding: 80px 0;
+  }
+  
+  /* Estos eran colores que tenia la pagina que lo quite porque no funcionaba con el darkmode
+  }
+  .block:nth-child(odd) {
+    background-color: #f8f9fa;
+  }
+  .block:nth-child(even) {
+    background-color: #ffffff;
+  }
+  .block:last-child {
+    background-color: #007bff;
+    color: white;
+  } */
+
+  .icon-box {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  .icon-box:hover {
+    transform: translateY(-10px);
+  }
+  .icon-box i {
+    font-size: 2rem;
+    color: #007bff;
+  }
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+  }
+  .category-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .category-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  .category-item:hover img {
+    transform: scale(1.1);
+  }
+  .category-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .category-item:hover .overlay {
+    opacity: 1;
+  }
+  .testimonial-card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  .testimonial-card:hover {
+    transform: translateY(-10px);
+  }
+  .brand-logo {
+    max-width: 150px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+  .brand-logo:hover {
+    filter: grayscale(0%);
+}
+
